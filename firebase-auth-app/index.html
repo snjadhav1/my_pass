@@ -1,45 +1,47 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Firebase Google Auth</title>
-    <script type="module">
-      // Firebase imports
-      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js";
-      import {
-        getAuth,
-        signInWithPopup,
-        GoogleAuthProvider,
-      } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-auth.js";
+<head>
+  <title>Firebase Google Auth</title>
+  <script type="module">
+    // Firebase imports
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js";
+    import {
+      getAuth,
+      signInWithPopup,
+      GoogleAuthProvider,
+    } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-auth.js";
 
-      const firebaseConfig = {
-        apiKey: "AIzaSyBsC9FB6seaBDar2Njbe1ZirsRDvVFrplQ",
-        authDomain: "newproject-459802.firebaseapp.com",
-        projectId: "newproject-459802",
-        storageBucket: "newproject-459802.appspot.com",
-        messagingSenderId: "232633250772",
-        appId: "1:232633250772:web:e1878623aaaf4bfbbc9c41",
-        measurementId: "G-K4GTQ2JJDW",
-      };
+    // Your Firebase config
+    const firebaseConfig = {
+      apiKey: "AIzaSyAfpxsRdNZ7nJR6BWvnmeKdNmq0huh0HXA",
+      authDomain: "example-project-461804.firebaseapp.com",
+      projectId: "example-project-461804",
+      storageBucket: "example-project-461804.appspot.com",
+      messagingSenderId: "784881586992",
+      appId: "1:784881586992:web:fe731638a21f178d492ef5",
+      measurementId: "G-P8WPCSRT8K"
+    };
 
-      const app = initializeApp(firebaseConfig);
-      const auth = getAuth(app);
-      const provider = new GoogleAuthProvider();
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth(app);
+    const provider = new GoogleAuthProvider();
 
-      window.login = () => {
-        signInWithPopup(auth, provider)
-          .then((result) => {
-            const user = result.user;
-            alert("Signed in as " + user.displayName);
-          })
-          .catch((error) => {
-            console.error("Error:", error);
-            alert("Auth failed: " + error.message);
-          });
-      };
-    </script>
-  </head>
-  <body>
-    <h2>Firebase Google Login</h2>
-    <button onclick="login()">Login with Google</button>
-  </body>
+    window.login = () => {
+      signInWithPopup(auth, provider)
+        .then((result) => {
+          const user = result.user;
+          alert("Signed in as " + user.displayName);
+        })
+        .catch((error) => {
+          console.error("Error:", error);
+          alert("Auth failed: " + error.message);
+        });
+    };
+  </script>
+</head>
+<body>
+  <h2>Firebase Google Login (example-project-461804)</h2>
+  <button onclick="login()">Login with Google</button>
+</body>
 </html>
