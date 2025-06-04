@@ -1,0 +1,34 @@
+ginAss 1:Install Google App Engine. Create hello world app and other simple web applications using python/java. 
+
+1. install Google appengine laucher 1.9.62 python 2.7.9 and donwload
+2. open google app engine go in preferences and set python.exe and appengine path
+3. create the new app named folder in local machine .copy its location .
+4.now in app engine create new project set the location as parent directort set the ports
+5.run and browser localhost:port
+
+Ass2:Use GAE launcher to launch the web applications. 
+1.install google cloud sdk shell and setup
+2.open its terminal type: gcloud init
+3.choose new configuaration
+4.gcloud auth login
+On login to the google cloud  using browese or link displayed
+Step 2: Create Project select my biling account
+Step 3 : Add billing details 
+Step 4: Go to app engine by searching  App Engine 
+Step 5:  Go serach- Create your project | google app engine standard 
+Step 6 : add location and the screen must show python and standard 
+Step 7:open console in it 
+Step 8:git clone https://github.com/Saniya-Bhosale/my_paas_app/
+Step 9:cd my_pass_app/
+Step 10:gcloud app deploy
+Step 11:gcloud app browse
+part 2:
+1.again go to the sdk shell
+2.gcloud init
+3.choose reinitialize configuaration
+login to the same accout as part 1
+select project same crreted in the part 1
+cd “project link ex: E:\WEB the project must be downloaded from github and then saved to the folder and that flder path should be given”
+ gcloud app deploy 
+gcloud app browse
+

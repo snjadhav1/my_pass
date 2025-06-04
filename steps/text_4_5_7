@@ -1,0 +1,56 @@
+
+Ass 4:
+download virtual box and iso files set up create
+imp :in tool set net address and in each virtual box setting ,network part ad nat network
+if ip config is not working :sudo apt install net-tools
+ifconfig
+ls
+touch text.txt          -create
+nano text.txt           -edit
+cat text.txt            -show
+ping (address)
+scp text.txt username@ip_address:/home/username 
+scp text.txt username@ip_address:
+🔽 On Receiver VM (first):
+bash
+Copy
+Edit
+nc -l -p 1234 > received.txt
+🔼 On Sender VM (second):
+bash
+Copy
+Edit
+nc <receiver-ip> 1234 < text.txt
+Nothing will show up on screen unless there’s an error — but the file will silently transfer and complete.
+Ass 5:AWS
+Ass 6:
+
+1.Choose project
+2.go to google shell
+3.git clone https://github.com/Saniya-Bhosale/my_paas_app
+4.cd (path)
+5.gcloud app deploy
+6.gcloud app browse
+
+Ass 7:Salesforce
+login to the agentforce 
+https://orgfarm-21c29881b2-dev-ed.develop.lightning.force.com/lightning/
+step 1: Create object (when your are in the home page of salesforce
+just click to the setting icon on top-right corner select "Data Cloud Setup"
+You will see anaother home there and object manager tab beside it
+-Go to object manager on right click create=create new object
+-create to or more 
+
+Step2 :after that go to  the settings at top right corner and click to "setup" 
+in the serach bar serch for search "TABS" -Create
+
+Step 3:after that go to  the settings at top right corner and click to "setup" 
+serach app manager -create new lighning app :
+go seting all things
+#imp in last step set profiles to :System administrator and stantard user
+create 
+
+Step 4:after that go to  the settings at top right corner and click to "setup"
+Click ( dots on left top corner serch the Lighing ap name you created
+add data and show
+

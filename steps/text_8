@@ -1,0 +1,28 @@
+1.go to firbase signin select the google cloud project
+2.Do next ANd set defult account _give project name
+3.next you will be on the page Form there go to the authentication section
+4.add google enter the details and all
+5.clone the git repo in shell
+6.update index.html with
+const firebaseConfig = {
+  apiKey: "AIzaSyBAkO_vHWNeR7LXMk7YZYY-oujtUnLl5ms",
+  authDomain: "shaped-goal-461808-n3.firebaseapp.com",
+  projectId: "shaped-goal-461808-n3",
+  storageBucket: "shaped-goal-461808-n3.firebasestorage.app",
+  messagingSenderId: "700076214678",
+  appId: "1:700076214678:web:a6249998c4a22b2d7cf5b7",
+  measurementId: "G-TZ9JH54ZHJ"
+};
+such new auth details
+then in authentication
+-gcloud app deploy
+-gcloud app browse
+Authorize your domain:
+•	Go to Firebase Console → Authentication → Settings tab.
+•	Scroll to Authorized domains.
+•	Add:
+CopyEdit
+newproject-459802.el.r.appspot.com
+localhost
+if not already present.
+run now
